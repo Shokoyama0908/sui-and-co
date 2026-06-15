@@ -44,7 +44,7 @@ header.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);bac
 .nav .tel .num{font-size:18px;line-height:1.1}
 
 /* hero */
-.hero{position:relative;background:linear-gradient(150deg,#15315c 0%,#1f4378 60%,#26508c 100%);color:#fff;overflow:hidden;padding:64px 0 76px}
+.hero{position:relative;background:linear-gradient(105deg,rgba(12,26,49,.94) 0%,rgba(19,44,84,.86) 46%,rgba(34,72,128,.64) 100%),url('images/hero.jpg') center/cover;color:#fff;overflow:hidden;padding:64px 0 76px}
 .hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(198,154,76,.28),transparent 70%)}
 .hero .wrap{position:relative;z-index:2}
 .hero .logo{width:96px;height:96px;border-radius:50%;box-shadow:0 6px 24px rgba(0,0,0,.28);margin-bottom:22px}
@@ -95,6 +95,10 @@ header.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);bac
 .ph{aspect-ratio:4/3;border:2px dashed #c3cde0;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#93a1bd;font-size:13px;font-weight:600;background:var(--tint);gap:6px}
 .ph svg{width:30px;height:30px}
 .case-note{text-align:center;color:var(--muted);font-size:13px;margin-top:16px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.gallery figure{border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#fff;box-shadow:0 5px 16px rgba(21,49,92,.07)}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.gallery figcaption{font-size:13.5px;color:var(--navy);font-weight:700;padding:11px 15px}
 
 /* price */
 .price{background:var(--tint)}
@@ -249,14 +253,15 @@ footer{background:#102342;color:#9fb0cc;text-align:center;font-size:12.5px;paddi
 
 <section>
   <div class="wrap">
-    <div class="center"><span class="eyebrow">WORKS</span><h2 class="sec">施工事例（Before / After）</h2><p class="sec-lead">仕上がりの違いは、写真で一目瞭然です。</p></div>
-    <div class="case-grid">
-      <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="m21 15-5-5L5 19"/></svg>エントランス Before</div>
-      <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="m21 15-5-5L5 19"/></svg>エントランス After</div>
-      <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="m21 15-5-5L5 19"/></svg>廊下 Before</div>
-      <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="m21 15-5-5L5 19"/></svg>廊下 After</div>
+    <div class="center"><span class="eyebrow">WORKS</span><h2 class="sec">施工事例</h2><p class="sec-lead">横浜・川崎の現場での、実際の作業の様子と仕上がりです。</p></div>
+    <div class="gallery">
+      <figure><img src="images/g1.jpg" alt="共用廊下の床洗浄（作業中）" loading="lazy"><figcaption>共用廊下の床洗浄</figcaption></figure>
+      <figure><img src="images/g2.jpg" alt="階段のポリッシャー洗浄" loading="lazy"><figcaption>階段 ポリッシャー洗浄</figcaption></figure>
+      <figure><img src="images/g3.jpg" alt="廊下のポリッシャー洗浄" loading="lazy"><figcaption>廊下 ポリッシャー洗浄</figcaption></figure>
+      <figure><img src="images/g4.jpg" alt="清掃後の共用廊下" loading="lazy"><figcaption>共用廊下 清掃後</figcaption></figure>
+      <figure><img src="images/g5.jpg" alt="清掃後の階段" loading="lazy"><figcaption>階段 清掃後</figcaption></figure>
+      <figure><img src="images/g6.jpg" alt="廊下・階段まわりの美装" loading="lazy"><figcaption>廊下まわりの美装</figcaption></figure>
     </div>
-    <p class="case-note">※ 実際の施工写真に差し替えてご利用ください。</p>
   </div>
 </section>
 
